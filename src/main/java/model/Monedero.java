@@ -26,7 +26,7 @@ public class Monedero {
 		Integer dineroApagar=calcularPago(pago);
 		if (dineroApagar>=precio) {
 			dineroApagar=dineroApagar-precio;
-			while(dineroApagar>Moneda.TENCENT.value) {
+			while(dineroApagar>=Moneda.TENCENT.value) {
 			if ((dineroApagar)>= Moneda.TWOEURO.value) {
 				cambio.put(Moneda.TWOEURO, 1);
 				dineroApagar=dineroApagar-Moneda.TWOEURO.value;		

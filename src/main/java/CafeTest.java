@@ -29,13 +29,16 @@ class CafeTest {
 	void testCambio() {
 		Monedero mon = new Monedero();
 		Map<Moneda, Integer> cambio = new HashMap<>();
-		cambio.put(Moneda.TWOEURO, 1);
-		cambio.put(Moneda.ONEEURO, 1);
 		cambio.put(Moneda.FITTYCENT, 1);
+		cambio.put(Moneda.TENCENT, 1);
+
+
 
 		
 		Map<Moneda, Integer> pago = new HashMap<>();
-		pago.put(Moneda.ONEEURO, 4);
+		pago.put(Moneda.ONEEURO, 1);
+		pago.put(Moneda.TENCENT, 1);
+
 
 		
 		
